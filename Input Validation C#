@@ -30,7 +30,7 @@ namespace DreamofMillions
             {
                 pass = false;
             }
-            retunr pass;
+            return pass;
         }
     }
 }

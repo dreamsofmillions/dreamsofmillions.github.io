@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset=utf-8">
+<title>Home</title>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!-- Bootstrap -->
+     <link href="css/bootstrap.min.css" rel="stylesheet">
+     <script src="js/respond.js"></script>
+     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+     <script type="text/javascript">
+    function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.0)";
+    }
+    function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+    document.body.style.backgroundColor = "white";
+    } 
+    </script>
+	<style> 
+	*{
+	margin:0px;
+	padding 0px;
+	font-size: 1em;
+	}
+	* {
+	font-family:sans-serif;
+	list-style:none;
+	}
+	body, html, .main {
+        height: 100%;
+        }
+	header{
+	margin: 0;
+	font-size:1.5em;
+	padding:0px 0 10px 5px;
+	background: linear-gradient(#ee82ee, #753a88);
+	color:#fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	} 
+	nav{
+		position: relative;
+		top: 0;
+		width: 100%;
+		padding-top: 10px;
+		}
+		
+		.container {
+		width: 100%;
+		margin: 0 auto;
+		color:#000;
+		}
+		
+		h2 {
+		display: block;
+		font-size: 1.5em;
+		-webkit-margin-before: 0.83em;
+		-webkit-margin-after: 0.83em;
+		-webkit-margin-start: 0px;
+		-webkit-margin-end: 0px;
+		font-weight: bold;
+		}
+	  
+		.sidenav {
+		height: 100%; 
+		width: 0; 
+		position: fixed; 
+		z-index: 1; 
+		top: 0px; 
+		left: 0;
+		background: linear-gradient(#ee82ee, #753a88);
+		overflow-x: hidden; 
+		padding-top: 60px; 
+		transition: 0.5s; 
+		}
+			
+		.sidenav a {
+		padding: 8px 8px 8px 32px;
+		text-decoration: none;
+		font-size: 25px;
+		color: #fff;
+		display: block;
+		transition: 0.3s;
+		}
+		.sidenav a:hover a:active{
+		 background-color: #b284be;
+		 color: #ffff;
+		}
+		.sidenav .closebtn {
+		position: absolute;
+		top: 0;
+		right: 35px;
+		font-size: 36px;
+		margin-left: 50px;
+		}
+		
+		@media screen and (max-height: 450px) {
+		.sidenav {padding-top: 15px;}
+		.sidenav a {font-size: 18px;}
+		}
+			
+		.border-menu {
+		position: relative;
+		padding-left: 1.25em;
+		}
+		.border-menu:before {
+		content: "";
+		position: absolute;
+		top: 0.25em;
+		left: 0;
+		width: 1em;
+		height: 0.125em;
+		border-top: 0.375em double #000;
+		border-bottom: 0.125em solid #000;
+		}
+					
+		ul li {
+		list-style-type: square;
+		margin: 0;
+		padding: 0;
+		text-size:1em;
+		}
+		.btn{
+		margin:auto;
+		width:40%;
+		border-radius: 10px;
+		border: none;
+		padding: 10px 20px;
+		color:aliceblue;
+		background: linear-gradient(#ee82ee, #753a88);
+		text-align: center;	   
+		}
+		button.btn{
+		margin-left: 20%;	   
+		}
+		.main  {
+		background-image: url(https://images.unsplash.com/photo-1508145052393-b0328a3ab751?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6f2e3292544788452be6272bd88df57a&auto=format&fit=crop&w=500&q=60);
+	        background-repeat: no-repeat center top;
+		background-size: cover; 
+		min-height: 100%;
+		}
+			
+		#clients{
+        background-color: white;
+		min-height: 100%;
+       }
+	#topBtn {
+	  display: none;
+	  position: relative;
+	  bottom: 0px;
+	  left: 50%;
+	  z-index: 99;
+	  font-size: 16px;
+	  border: none;
+	  outline: none;
+	  background: linear-gradient(#ee82ee, #753a88);
+	  color: white;
+	  cursor: pointer;
+	  padding: 15px;
+	  border-radius: 4px;
+	}
+	#topBtn:hover {
+        background-color: #555;
+	}
+	#footer {
+	position: relative; 
+	height: 10%;	   
+	bottom: 50px;
+	color: white;
+	text-align: center;
+	background: linear-gradient(#ee82ee, #753a88);
+	width: 100%;
+	}
+	</style>
+	<script>
+	$('.trigger, .slider').click(function() {
+        $('.slider').toggleClass('close');
+	});
+        </script>	   
+	</head>
+	<body>
+        <header><h2>Dream Teams</h2></header>
+	<nav>
+	<span onclick="openNav()"> 
+	<i class="fa fa-align-justify" style="font-size:36px; color:#753a88; margin-left:15px">&nbsp;Menu</i></span>
+	<br><br> 										      
+	<div id="mySidenav" class="sidenav">
+	<br><br>
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	<br><br> 
+	<a class="active" href="aboutus.html">About Us</a>
+	<a href="theceo.html">About The Ceo</a>
+	<a href="clients.html">Dream Teams</a>
+	<a href="ourexpectation.html">Our Expectations</a>
+	<a href="services.html">Our Services</a>
+	<a href="calendarmenu.html">Donate Page</a>
+	<a href="contact.html">Contact Us</a>	
+	<a href="http://google.com" >Exit this Window</a>
+	</nav>
+        <body>
+        <h2><center><a href="#clients" >What Do We</a></center></h2>
+	<div class="main">
+        <section><section> 
+	</div>
+	<div class="row">
+        <div class="container" id="clients">
+	<section>
+	<br/>
+	<ul> 	
+	<li><b>Network:</b> Communicating with others to explain, gather, and disseminate information and ideas to gain knowledge, sources and materials to complete our goals.</li><br>
+	<li><b>Peer Support:</b> Communicate within our own members about our personal challenges, achievements, and goals.</li><br>
+	<li><b>Building Project Planning Skills:</b> Building on organizational tasks that will be needed to start and complete your project. Also to build and learn new skill sets etc. (ex:Research jobs markets)
+	</li><br>
+	<li><b>Work on Current projects:</b> Spending time researching our own personal projects or goals.</li><br>
+	<li><b>New Challenges:</b> Take assessments to learn new skills</li><br>
+	<li><b>Stratgeic Planing:</b> Brainstorm new ideas for marking products and services at Dreams of Millions, Inc:</li><br>
+	<li><b>Meet with Care Source about job initiatives (life coach):</b> For those who are eligible.</li><br>
+	</ul>
+	</section>
+	<button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>			 
+	</div>
+	</div>
+	<br><br>
+	<center>
+	</div>
+	</center>
+	        <br><br>
+	        </body>
+		<script>
+		$(document).ready(function(){
+		  $("a").on('click', function(event) {
+		   if (this.hash !== "") {
+			 event.preventDefault();
+			var hash = this.hash;
+			$('html, body').animate({
+				scrollTop: $(hash).offset().top
+			  }, 1000, function(){
+			  window.location.hash = hash;
+		   
+			  });
+			} 
+		  });
+		});
+	</script>
+	<script>
+	window.onscroll = function() {scrollFunction()};
+	function scrollFunction() {
+	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+	document.getElementById("topBtn").style.display = "block";
+	} else {
+	document.getElementById("Btopn").style.display = "none";
+	}
+	}
+	function topFunction() {
+	document.body.scrollTop = 0; 
+	document.documentElement.scrollTop = 0; 
+	}
+	</script>							     
+	</body>
+	<div id="footer" >© 2018 Dreams of Millions Inc.</div>									  
+	</html>

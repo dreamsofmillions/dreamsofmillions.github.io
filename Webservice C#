@@ -1,0 +1,30 @@
+namespace DreamofMillions
+{
+    public class MembersService : System.Web.Services.WebService
+    {
+
+        [WebMethod]
+        public int UserAddorEdit(string FName, string LName, string UserName, string EmailAddress, string Password)
+        {
+            int retRecord;
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["sqlCon"].ConnectionString))
+            {
+
+                using (SqlCommand cmd = new SqlCommand("UserAddorEdit", con))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.Add("FName", SqlDbType.VarChar, 50).Value = FName;
+                    cmd.Parameters.Add("LName", SqlDbType.VarChar, 50).Value = LName;
+                    cmd.Parameters.Add("UserName", SqlDbType.VarChar, 50).Value = UserName;
+                    cmd.Parameters.Add("EmailAddress", SqlDbType.VarChar, 50).Value = EmailAddress;
+                    if (con.State != ConnectionState.Open)
+                    {
+                        con.Open();
+                    }
+                    retRecord = cmd.ExecuteNonQuery();
+                }
+            }
+                   return retRecord;
+        }
+    }
+}
